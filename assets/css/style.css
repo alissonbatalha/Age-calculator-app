@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,700;1,800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: hsl(223.2,7.6%,84.1%);
+	
+	font-family: 'Poppins', sans-serif;
+}
+
+main {
+	height: 84%;
+	
+	margin-top: 10%;
+	
+	display: flex;
+	align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+	width: 94%;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 4.4rem;
+	
+	background-color: hsl(223.2,1.1%,95.9%);
+	
+	padding: 2rem;
+	
+	border-radius: 1rem;
+	border-bottom-right-radius: 5rem;
+}
+
+.inputs {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	
+	padding-top: 3rem;
+}
+
+.inputs__box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	row-gap: .6rem;
+}
+
+.inputs__box label {
+	text-transform: uppercase;
+	font-size: .85rem;
+	font-weight: bold;
+	letter-spacing: 2.5px;
+	
+	color: hsl(0, 1%, 44%);
+}
+
+.inputs__box label.label-error {
+	 color: hsl(0,85.3%,62.7%);
+}
+
+.inputs__box input {
+	width: 5rem;
+	height: 3rem;
+	
+	border: 1.5px solid hsl(223.2,0%,72.7%);
+	border-radius: 5px;
+	outline: none;
+	
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-align: center;
+}
+
+.inputs__box input:focus,
+.inputs__box input:hover {
+	outline: 0;
+	
+	border: 1.5px solid hsl(259, 100%, 65%);
+}
+
+.inputs__box input.input-error {
+	border: 1.5px solid hsl(0,85.3%,62.7%);
+}
+
+.inputs__box span.error {
+	position: absolute;
+
+	margin-top: 5.2rem;
+	
+	font-size: .64rem;
+	text-align: center;
+	line-height: .7rem;
+	
+	color: hsl(0,85.3%,62.7%);
+}
+
+.division {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.division button {
+	position: absolute;
+	
+	padding: 1.3rem;
+	
+	background-color: hsl(259, 100%, 65%);
+	
+	border: 0;
+	outline: 0;
+	border-radius: 50%;
+}
+
+.division button:hover {
+	background-color: hsl(0,8.8%,8.4%);
+}
+
+.division button img {
+   width: 30px;
+}
+
+.division::after {
+	content: "";
+	height: 1px;
+	width: 100%;
+	
+	background-color: hsl(0,0%,78.1%);
+}
+
+.result h2 {
+	font-size: 3.5rem;
+	font-style: italic;
+}
+
+.result span {
+	color: hsl(259, 100%, 65%);
+}
+
+.attribution { 
+	display: flex;
+	justify-content: center;
+	
+	font-size: 11px; 
+	text-align: center; 
+	
+  margin-top: 2rem;
+}
+
+.attribution a { 
+	color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 600px) {
+	.calculator {
+		width: 60%;
+	}
+	
+	.inputs {
+		justify-content: flex-start;
+	}
+	
+	.inputs__box input {
+		width: 7.5rem;
+		height: 3.1rem;
+		
+		text-align: left;
+		padding-left: .8rem;
+	}
+	
+	.inputs__box span.error {
+		font-size: .8rem;
+	}
+	
+	.division {
+		justify-content: flex-end;
+	}
+	
+	.result h2 {
+		font-size: 4rem;
+		font-weight: 800;
+	}
+}
