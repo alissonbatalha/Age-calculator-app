@@ -1,66 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  
-  <title>Frontend Mentor | Age calculator app</title>
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <link rel="stylesheet" href="./assets/css/style.css" type="text/css" media="all" />
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator App | Alisson Batalha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  
-  <main>
-	  
-	  <div class="calculator">
-		  
-		  <div class="inputs">
-			
-			  <div class="inputs__box">
-				  <label for="day" id="label-day">Day</label>
-				  <input type="number" id="day" maxlength="2" required="true" placeholder="DD"/>
-				  <span class="error" id="error-day"></span>
-			  </div> <!-- inputs__box -->
-			  
-			  <div class="inputs__box">
-				  <label for="month" id="label-month">Month</label>
-				  <input type="number" id="month" maxlength="2"  placeholder="MM"/>
-				  <span class="error" id="error-month"></span>
-			  </div> <!-- inputs__box -->
-			  
-			  <div class="inputs__box">
-				  <label for="year" id="label-year">Year</label>
-				  <input type="number" id="year" maxlength="4" placeholder="YYYY"/>
-				  <span class="error" id="error-year"></span>
-			  </div> <!-- inputs__box -->
-			  
-		  </div> <!-- inputs -->
-		  
-		  <div class="division">
-				<button id="button" onclick="calculate()">
-					<img src="./assets/images/icon-arrow.svg" alt="arrow's icon" />
-			 </button>
-		  </div> <!-- division -->
-		  
-		  <div class="result">
-			  <h2 class="result__year"><span id="year-span">--</span> Years</h2>
-			  <h2 class="result__month"><span id="month-span">--</span> Months</h2>
-			  <h2 class="result__day"><span id="day-span">--</span> Days</h2>
-		  </div> <!-- result -->
-		  
-	  </div> <!-- Calculator-->
-  </main>
-  
-  
-  <footer class="attribution">
-    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.</p>
-  </footer>
-  
-  
-  <script src="./js/script.js" type="text/javascript" charset="utf-8"></script>
+    <main class="calculator">
+        <div class="calculator__container">
+            <form id="age-form" class="calculator__form" novalidate>
+                <div class="calculator__inputs">
+                    <div class="calculator__field">
+                        <label for="day" class="calculator__label">Day</label>
+                        <input type="number" id="day" class="calculator__input" placeholder="DD" required>
+                        <span id="error-day" class="calculator__error"></span>
+                    </div>
+                    
+                    <div class="calculator__field">
+                        <label for="month" class="calculator__label">Month</label>
+                        <input type="number" id="month" class="calculator__input" placeholder="MM" required>
+                        <span id="error-month" class="calculator__error"></span>
+                    </div>
+                    
+                    <div class="calculator__field">
+                        <label for="year" class="calculator__label">Year</label>
+                        <input type="number" id="year" class="calculator__input" placeholder="YYYY" required>
+                        <span id="error-year" class="calculator__error"></span>
+                    </div>
+                </div>
+
+                <div class="calculator__divider-container">
+                    <hr class="calculator__divider">
+                    <button type="submit" class="calculator__btn" aria-label="Calculate Age">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+                            <g fill="none" stroke="#FFF" stroke-width="2">
+                                <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M23 22.019C30.333 21.686 45 25.616 45 44"/>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+
+            <div class="calculator__results">
+                <p class="calculator__result-row">
+                    <span id="result-years" class="calculator__number">--</span> 
+                    <span class="calculator__text">years</span>
+                </p>
+                <p class="calculator__result-row">
+                    <span id="result-months" class="calculator__number">--</span> 
+                    <span class="calculator__text">months</span>
+                </p>
+                <p class="calculator__result-row">
+                    <span id="result-days" class="calculator__number">--</span> 
+                    <span class="calculator__text">days</span>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

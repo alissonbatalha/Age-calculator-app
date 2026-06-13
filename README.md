@@ -1,102 +1,131 @@
-# Frontend Mentor - Age calculator app
+🗓️ Age Calculator
 
-![Design preview for the Age calculator app coding challenge](./design/desktop-preview.jpg)
+<div align="center">
+  <p><strong>Interactive Age Calculator</strong></p>
+  <p>
+    Calculate a user's exact age in years, months and days with real-time validation and a modern responsive interface.
+  </p>  <p>
+    <a href="#-português">Português</a> •
+    <a href="#-english">English</a>
+  </p>
+</div>---
 
-## Welcome! 👋
+🇧🇷 Português
 
-Thanks for checking out this front-end coding challenge.
+📝 Sobre o Projeto
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+O Age Calculator é uma aplicação web moderna desenvolvida para calcular com precisão a idade de um usuário com base na data de nascimento informada.
 
-**To do this challenge, you need a decent understanding of HTML, CSS and JavaScript.**
+O sistema realiza o cálculo exato em anos, meses e dias, aplicando validações inteligentes para garantir a consistência dos dados fornecidos. O projeto foi desenvolvido com foco em boas práticas de desenvolvimento front-end, acessibilidade, responsividade e manipulação avançada de datas utilizando JavaScript puro.
 
-## The challenge
+Este projeto demonstra habilidades essenciais para desenvolvimento web moderno, incluindo validação de formulários, manipulação do DOM e criação de interfaces responsivas.
 
-Your challenge is to build out this age calculator app and get it looking as close to the design as possible.
+---
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+✨ Funcionalidades
 
-Your users should be able to: 
+- ✅ Cálculo preciso da idade em anos, meses e dias.
+- ✅ Validação em tempo real dos campos do formulário.
+- ✅ Bloqueio de datas inválidas e futuras.
+- ✅ Tratamento correto de anos bissextos.
+- ✅ Interface moderna e responsiva.
+- ✅ Feedback visual para erros de preenchimento.
+- ✅ Experiência otimizada para desktop, tablet e dispositivos móveis.
 
-- View an age in years, months, and days after submitting a valid date through the form
-- Receive validation errors if:
-  - Any field is empty when the form is submitted
-  - The day number is not between 1-31
-  - The month number is not between 1-12
-  - The year is in the future
-  - The date is invalid e.g. 31/04/1991 (there are 30 days in April)
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
-- **Bonus**: See the age numbers animate to their final number when the form is submitted
+---
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+🛠️ Tecnologias Utilizadas
 
-## Where to find everything
+- HTML5 — Estrutura semântica e acessível.
+- CSS3 — Layout responsivo, Flexbox, Grid, variáveis CSS e animações suaves.
+- JavaScript (ES6+) — Lógica de cálculo, validações e manipulação dinâmica do DOM.
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+---
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+🚀 Como Executar o Projeto
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+1. Clone este repositório:
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+git clone https://github.com/seu-usuario/age-calculator.git
 
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
+2. Acesse a pasta do projeto:
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+cd age-calculator
 
-## Building your project
+3. Abra o arquivo "index.html" em seu navegador.
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+---
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+📚 Aprendizados
 
-## Deploying your project
+Durante o desenvolvimento deste projeto foram aplicados conceitos como:
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+- Manipulação de datas em JavaScript.
+- Validação avançada de formulários.
+- Estruturação semântica com HTML5.
+- Responsividade para múltiplos dispositivos.
+- Organização de código front-end.
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+---
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+🇺🇸 English
 
-## Create a custom `README.md`
+📝 About the Project
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+Age Calculator is a modern web application designed to accurately calculate a user's age based on a provided birth date.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+The application calculates the exact age in years, months and days, while applying intelligent validation rules to ensure data consistency. The project was built with a strong focus on front-end best practices, accessibility, responsiveness and advanced date manipulation using vanilla JavaScript.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+This project showcases essential modern web development skills, including form validation, DOM manipulation and responsive user interface design.
 
-## Submitting your solution
+---
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+✨ Features
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+- ✅ Accurate age calculation in years, months and days.
+- ✅ Real-time form validation.
+- ✅ Prevention of invalid and future dates.
+- ✅ Proper leap year handling.
+- ✅ Modern and responsive interface.
+- ✅ Visual feedback for validation errors.
+- ✅ Optimized experience for desktop, tablet and mobile devices.
 
-## Sharing your solution
+---
 
-There are multiple places you can share your solution:
+🛠️ Technologies Used
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+- HTML5 — Semantic and accessible structure.
+- CSS3 — Responsive layouts, Flexbox, Grid, CSS variables and smooth animations.
+- JavaScript (ES6+) — Calculation logic, validations and dynamic DOM manipulation.
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+---
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+🚀 Getting Started
 
-## Got feedback for us?
+1. Clone the repository:
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+git clone https://github.com/your-username/age-calculator.git
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+2. Navigate to the project folder:
 
-**Have fun building!** 🚀
+cd age-calculator
+
+3. Open the "index.html" file in your browser.
+
+---
+
+📚 What I Learned
+
+This project helped reinforce concepts such as:
+
+- JavaScript date manipulation.
+- Advanced form validation.
+- Semantic HTML5 structure.
+- Responsive web design.
+- Front-end code organization.
+
+---
+
+📄 License
+
+This project is available for study, learning and portfolio purposes.
